@@ -1,0 +1,33 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-logo {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 6rem;
+
+    h1 {
+        font-size: 18.75rem;
+        font-weight: 300;
+
+        @include media-breakpoint-down(md) {
+            font-size: 14.75rem;
+        }
+    }
+
+    .sub-title {
+		position: absolute;
+		bottom: -3.5rem;
+		right: -16rem;
+		font-family: Haigrast;
+		color: #414040;
+        white-space: nowrap;
+		z-index: 10;
+
+        @include media-breakpoint-down(md) {
+            right: 0;
+        }
+	}
+}

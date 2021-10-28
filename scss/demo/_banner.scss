@@ -1,0 +1,50 @@
+
+/* ----------------------------------------------------------------
+
+	banner.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Banner
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for banner. Thanks!
+-----------------------------------------------------------------*/
+
+
+.banner {
+    position: relative;
+    background-size: cover;
+
+    .banner-wrap {
+        padding-left: 5.375rem;
+        padding-right: 5.375rem;
+    }
+    
+    padding: 3.75rem 0;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 17.375rem;
+        padding-bottom: 10.375rem;
+        height: 100%;
+    }
+}
+
+.banner-sm {
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 27%;
+        left: -9rem;
+    
+        h4 {
+            position: relative;
+            font-family: Haigrast;
+            left: -9rem;
+        }
+    }
+
+}

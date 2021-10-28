@@ -1,0 +1,150 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.link {
+	position: relative;
+
+	a {
+		font-weight: 500;
+		color: #4e4b4a;
+	}
+
+	i {
+		margin-left: 2rem;
+	}
+
+	&:hover {
+		color: $theme-color;
+
+		.link-icon {
+			transform: translateX(1rem);
+		}
+	}
+}
+
+.link-icon {
+	position: relative;
+	left: -1rem;
+	background-image: url(../images/icons/link-icon.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 8.5rem;
+    height: 9.75rem;
+
+	@include transition(all 0.3s ease-in-out);
+}
+
+
+.collection {
+	position: relative;
+
+	.sub-title {
+		position: absolute;
+		font-family: Haigrast;
+		bottom: -3rem;
+		right: 2rem;
+	}
+}
+
+// slider items//
+.slick-slide {
+	margin: 1rem;
+	height: auto;
+}
+
+.pagenation {
+	position: absolute;
+    bottom: 8rem;
+    right: 0;
+
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
+
+.progress {
+	min-width: 39vw;
+	height: 2px;
+	background-color: #e3d8d1;
+
+	.progress-bar {
+		background-color: #928b88;
+	}
+
+	&.history-progress {
+		min-width: 30vw;
+	}
+}
+
+.choose-image {
+	position: relative;
+
+	@include media-breakpoint-up(lg) {
+		.more-image {
+			position: absolute;
+			left: -3rem;
+			bottom: -3rem;
+		}
+	}
+}
+
+.feedback-image {
+	position: relative;
+
+	.more-image {
+		@include media-breakpoint-up(lg) {
+			position: absolute;
+			right: -3rem;
+			bottom: -3rem;
+
+			img {
+				max-width: calc(15vw - 3rem);
+			}
+		}
+	}
+}
+
+.best-products {
+	@include media-breakpoint-up(lg) {
+		.slick-track {
+			margin-left: -4rem;
+		}
+	}
+}
+
+.about {
+	padding: 5rem;
+	background-color: #ffecdb;
+}
+
+.about-more {
+	@include media-breakpoint-up(lg) {
+		position: relative;
+		left: -7rem;
+	
+		h4 {
+			position: relative;
+			right: -14rem;
+		}
+	}
+}
+
+.legacy {
+	position: relative;
+	z-index: 1;
+
+	@include media-breakpoint-up(lg) {
+		right: -4rem;
+	}
+}
+
+.arrows {
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
